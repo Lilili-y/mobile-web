@@ -1,0 +1,314 @@
+@charset 'UTF-8';
+body,
+ul,
+p,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+i,
+em {
+  font-style: normal;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 1.22666667rem;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 5;
+}
+header a {
+  font-size: 0.32rem;
+  color: #333;
+  margin-right: 0.69333333rem;
+}
+header .mid {
+  display: flex;
+  flex: 1;
+  height: 0.85333333rem;
+  align-items: center;
+  border-radius: 0.42666667rem;
+  padding-left: 0.42666667rem;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+header .mid .left {
+  width: 0.34666667rem;
+  height: 0.34666667rem;
+  margin-right: 0.21333333rem;
+  background: url(../icons/header_search.png) no-repeat 0 0 / 100%;
+}
+header .mid input {
+  width: 5.33333333rem;
+  height: 0.85333333rem;
+  border: none;
+  background-color: #f7f7f7;
+  outline: none;
+  font-size: 0.32rem;
+}
+header .msg {
+  width: 0.50666667rem;
+  height: 0.50666667rem;
+  margin-left: 0.69333333rem;
+}
+.main {
+  padding: 1.33333333rem 0.4rem;
+}
+.main .banner {
+  position: relative;
+  margin-top: 0.26666667rem;
+  width: 100%;
+  height: 3.94666667rem;
+}
+.main .banner .carousel {
+  width: 100%;
+  box-shadow: 0px 8px 15px 2px #ccc;
+}
+.main .banner .lunbo {
+  position: absolute;
+  bottom: 0.21333333rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .banner .lunbo ul {
+  display: flex;
+}
+.main .banner .lunbo ul li {
+  width: 0.21333333rem;
+  margin-right: 0.21333333rem;
+}
+.main .banner .lunbo ul li:last-child {
+  margin-right: 0;
+}
+.main .rentnav {
+  display: flex;
+  margin-top: 0.32rem;
+}
+.main .rentnav div {
+  flex: 1;
+  height: 1.86666667rem;
+  border-radius: 0.13333333rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.64rem 0.13333333rem #ccc;
+}
+.main .rentnav div:first-child {
+  margin-right: 0.26666667rem;
+}
+.main .discount {
+  margin-top: 0.96rem;
+}
+.main .discount .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .discount .title h3 {
+  font-size: 0.48rem;
+}
+.main .discount .title a {
+  width: 0.26666667rem;
+  height: 0.37333333rem;
+  background: url(../icons/content_icon_next.png) no-repeat 0 0 / contain;
+}
+.main .discount .bottom {
+  margin-top: 0.53333333rem;
+}
+.main .discount .bottom ul {
+  display: flex;
+}
+.main .discount .bottom ul li:first-child {
+  margin-right: 0.26666667rem;
+}
+.main .discount .bottom ul li .txt {
+  margin-top: 0.26666667rem;
+  color: #000;
+}
+.main .discount .bottom ul li .txt h5 {
+  font-size: 0.34666667rem;
+}
+.main .discount .bottom ul li .txt p {
+  margin-top: 0.13333333rem;
+  margin-bottom: 0.26666667rem;
+  font-size: 0.29333333rem;
+  color: #999;
+}
+.main .discount .bottom ul li .txt i {
+  display: block;
+  font-size: 0.29333333rem;
+  color: #f39800;
+  font-weight: 700;
+}
+.main .qiafan {
+  margin-top: 0.8rem;
+}
+.main .recommend {
+  margin-top: 0.96rem;
+}
+.main .recommend .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .recommend .title h3 {
+  font-size: 0.48rem;
+}
+.main .recommend .title .right {
+  display: flex;
+  font-weight: 700;
+  font-size: 0.37333333rem;
+}
+.main .recommend .title .right p {
+  position: relative;
+  color: #999;
+  margin: 0 0.32rem;
+}
+.main .recommend .title .right p.active {
+  color: #000;
+}
+.main .recommend .title .right p.active::after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: -0.10666667rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.32rem;
+  height: 0.10666667rem;
+  background-color: #14a2ee;
+  border-radius: 0.05333333rem;
+}
+.main .recommend .list {
+  margin-top: 0.64rem;
+}
+.main .recommend .list ul li {
+  display: flex;
+  margin-bottom: 0.48rem;
+}
+.main .recommend .list ul li .pic {
+  width: 2.93333333rem;
+  margin-right: 0.42666667rem;
+}
+.main .recommend .list ul li .txt {
+  width: 0;
+  flex: 1;
+}
+.main .recommend .list ul li .txt h5 {
+  font-size: 0.34666667rem;
+}
+.main .recommend .list ul li .txt p {
+  margin-top: 0.13333333rem;
+  font-size: 0.26666667rem;
+  color: #a1a1a1;
+}
+.main .recommend .list ul li .txt p:nth-of-type(2) {
+  /*先强制一行内显示文本*/
+  white-space: nowrap;
+  /*超出的隐藏*/
+  overflow: hidden;
+  /*文字用省略号替代超出的部分*/
+  text-overflow: ellipsis;
+}
+.main .recommend .list ul li .txt i {
+  display: inline-block;
+  margin-top: 0.13333333rem;
+  margin-right: 0.26666667rem;
+  padding: 0.05333333rem 0.32rem;
+  font-size: 0.26666667rem;
+  font-style: normal;
+  line-height: 0.42666667rem;
+  color: #a1a1a1;
+  border-radius: 0.10666667rem;
+  border: 1px solid #ccc;
+}
+.main .recommend .list ul li .txt span {
+  margin-top: 0.13333333rem;
+  display: block;
+  font-size: 0.29333333rem;
+  color: #f39800;
+}
+.main .recommend .list ul li .txt span em {
+  font-size: 0.34666667rem;
+  margin-right: 0.13333333rem;
+  font-weight: 700;
+}
+.main .recommend .list .more {
+  margin: 0 auto 0.64rem;
+  width: 6.93333333rem;
+  height: 1.01333333rem;
+  text-align: center;
+  line-height: 1.01333333rem;
+  color: #a3a3a3;
+  font-size: 0.32rem;
+  border-radius: 0.50666667rem;
+  background-color: #f2f2f3;
+}
+.main .story {
+  height: 2.26666667rem;
+  margin-bottom: 0.32rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: #fff;
+  box-shadow: 0 -0.13333333rem 0.48rem #ccc;
+}
+footer ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li {
+  text-align: center;
+  color: #c7c7c7;
+}
+footer ul li .iconfont {
+  font-size: 0.53333333rem;
+}
+footer ul li p {
+  margin-top: 0.13333333rem;
+  font-size: 0.29333333rem;
+}
+footer ul li.active {
+  color: #000;
+}

@@ -1,0 +1,309 @@
+@import './base.less';
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+i,em{
+    font-style: normal;
+}
+@rootSize: 37.5rem;
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: (46 / @rootSize);
+    align-items: center;
+    padding: 0 (15 / @rootSize);
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 5;
+
+    a {
+        font-size: (12 / @rootSize);
+        color: #333;
+        margin-right: (26 / @rootSize);
+    }
+    .mid {
+        display: flex;
+        flex: 1;
+        height: (32 / @rootSize);
+        align-items: center;
+        border-radius: (16 / @rootSize);
+        padding-left: (16 / @rootSize);
+        overflow: hidden;
+        background-color: #f7f7f7;
+        .left {
+            width: (13 / @rootSize);
+            height: (13 / @rootSize);
+            margin-right: (8 / @rootSize);
+            background: url(../icons/header_search.png) no-repeat 0 0 / 100%;
+        }
+        input {
+            width: (200 / @rootSize);
+            height: (32 / @rootSize);
+            border: none;    
+            background-color: #f7f7f7;
+            outline: none;
+            font-size: (12 / @rootSize);
+        }
+    }
+    .msg {
+        // margin-top: (-3 / @rootSize);
+        width: (19 / @rootSize);
+        height: (19 / @rootSize);
+        margin-left: (26 / @rootSize);
+        
+    }
+}
+.main {
+    padding: (50 / @rootSize) (15 / @rootSize);
+
+    // banner区域
+    .banner {
+        position: relative;
+        margin-top: (10 / @rootSize);
+        width: 100%;
+        height: (148 / @rootSize);
+        .carousel {
+            width: 100%;
+            box-shadow: 0px 8px 15px 2px #ccc;
+        }
+        .lunbo {
+            position: absolute;
+            bottom: (8 / @rootSize);
+            left: 50%;
+            transform: translateX(-50%);
+            ul {
+                display: flex;
+                li {
+                    width: (8 / @rootSize);
+                    margin-right: (8 / @rootSize);
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    // 整租合租区域
+    .rentnav {
+        display: flex;
+        margin-top: (12 / @rootSize);
+        div {
+            flex: 1;
+            height: (70 / @rootSize);
+            border-radius: (5 / @rootSize);
+            overflow: hidden;
+            box-shadow: 0 0 (24 / @rootSize) (5 / @rootSize) #ccc;
+            &:first-child {
+                margin-right: (10 / @rootSize);
+            }
+        }
+    }
+    // 超值优惠区域
+    .discount {
+        margin-top: (36 / @rootSize);
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                font-size: (18 / @rootSize);
+            }
+            a {
+                width: (10 / @rootSize);
+                height: (14 / @rootSize);
+                background: url(../icons/content_icon_next.png) no-repeat 0 0 / contain;
+            }
+        }
+        .bottom {
+            margin-top: (20 / @rootSize);
+            ul {
+                display: flex;
+                li {
+
+                    &:first-child {
+                        margin-right: (10 / @rootSize);
+                    }
+                    .txt {
+                        margin-top: (10 / @rootSize);
+                        color: #000;
+                        h5 {
+                            font-size: (13 / @rootSize);
+                        }
+                        p {
+                            margin-top: (5 / @rootSize);
+                            margin-bottom: (10 / @rootSize);
+                            font-size: (11 / @rootSize);
+                            color: #999;
+                        }
+                        i {
+                            display: block;
+                            font-size: (11 / @rootSize);
+                            color: #f39800;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 广告位招租
+    .qiafan {
+        margin-top: (30 / @rootSize);
+    }
+
+    // 为您推荐
+    .recommend {
+        margin-top: (36 / @rootSize);
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                font-size: (18 / @rootSize);
+            }
+            .right {
+                display: flex;
+                font-weight: 700;
+                font-size: (14 / @rootSize);
+                p {
+                    position: relative;
+                    color: #999;
+                    margin: 0 (12 / @rootSize) ;
+                    &.active {
+                        color: #000;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            display: block;
+                            bottom: (-4 / @rootSize);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: (12 / @rootSize);
+                            height: (4 / @rootSize);
+                            background-color: #14a2ee;
+                            border-radius: (2 / @rootSize);
+                        }
+                    }
+                }
+            }
+        }
+        .list {
+            margin-top: (24 / @rootSize);
+            ul {
+                li {
+                    display: flex;
+                    margin-bottom: (18 / @rootSize);
+                    .pic {
+                        width: (110 / @rootSize);
+                        margin-right: (16 / @rootSize);
+                    }
+                    .txt {
+                        width: 0;
+                        flex: 1;
+                        h5 {
+                            font-size: (13 / @rootSize);
+                        }
+                        p {
+                            margin-top: (5 / @rootSize);
+                            // width: (210 / @rootSize);
+                            font-size: (10 / @rootSize);
+                            color: #a1a1a1;
+                            &:nth-of-type(2) {
+                                /*先强制一行内显示文本*/
+                                white-space:nowrap;
+                                /*超出的隐藏*/
+                                overflow:hidden;
+                                /*文字用省略号替代超出的部分*/
+                                text-overflow:ellipsis;
+                                
+                                
+                            }
+                        }
+                        i {
+                            display: inline-block;
+                            margin-top: (5 / @rootSize);
+                            margin-right: (10 / @rootSize);
+                            padding: (2 / @rootSize) (12 / @rootSize);
+                            font-size: (10 / @rootSize);
+                            font-style: normal;
+                            line-height: (16 / @rootSize);
+                            color: #a1a1a1;
+                            border-radius: (4 / @rootSize);
+                            border: 1px solid #ccc;
+                        }
+                        span {
+                            margin-top: (5 / @rootSize);
+                            display: block;
+                            font-size: (11 / @rootSize);
+                            color: #f39800;
+                            em {
+                                font-size: (13 / @rootSize);
+                                margin-right: (5 / @rootSize);
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                }
+            .more {
+                margin: 0 auto (24 / @rootSize);
+                width: (260 / @rootSize);
+                height: (38 / @rootSize);
+                text-align: center;
+                line-height: (38 / @rootSize);
+                color: #a3a3a3;
+                font-size: (12 / @rootSize);
+                border-radius: (19 / @rootSize);
+                background-color: #f2f2f3;
+            }
+            }
+            
+    }
+    // 品牌故事入口
+        .story {
+            height: (85 / @rootSize);
+            margin-bottom: (12 / @rootSize);
+        }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: (50 / @rootSize);
+    background-color: #fff;
+    box-shadow: 0 (-5 / @rootSize) (18 / @rootSize) #ccc;
+    ul {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            text-align: center;
+            color: #c7c7c7;
+            .iconfont {
+                font-size: (20 / @rootSize);
+            }
+            p {
+                margin-top: (5 / @rootSize);
+                font-size: (11 / @rootSize);
+            }
+            &.active {
+                color: #000;
+            }
+        }
+    }
+}
